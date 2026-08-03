@@ -6,6 +6,10 @@
         #box1{
             color: black;
             background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
             
 
         }
@@ -92,6 +96,41 @@
             border-radius: 10px;
             margin-top: 40px;
         }
+
+
+        .navbar{
+            display: flex;
+            justify-content: flex-end;
+
+            align-items: center;
+            margin-right: 40px;
+/*             
+            background-color: aqua; */
+            height: 20px;
+            width: 500px;
+        }
+        .navbar a:first-child{
+         margin-right: 40px;
+}
+.navbar a{
+    text-decoration: none;  
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    background-color: lightblue;
+    padding: 15px, 20px;
+   
+}
+
+/* .right-menu{
+    background-color: white;
+} */
     </style>
 
 </head>
@@ -101,7 +140,15 @@
     <div>
             <div id="box1">
                  <h1 class="head"    style="color: rgb(241, 175, 51); font-weight: 800; "  >blink<span style="color: green;">it</span> </h1>
-            </div>
+             <nav class="navbar">
+                <div class="right-menu">
+               <a href="#">Login</a>
+               <a href="#">Cart 🛒</a>
+    </div>
+
+             </nav>
+            
+                </div>
 
             <div id="box2">
                 <h1>Stock Up on daily essentials </h1>
