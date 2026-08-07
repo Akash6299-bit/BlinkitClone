@@ -12,15 +12,32 @@
 
     .login-box{
 
-        background-color: rgb(136, 229, 112);
+        background-color: rgb(242, 246, 248);
         width: 300px;
         height: 500px;
         margin-left: 30px;
         border-radius: 10px;
     }
     .login-box-2{
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
         height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        width: 200px;
+        height: 20px;
+        margin-left: 20px;
+        
+    }
+
+    button{
+        width: 80px;
+        height: 40px;
+        margin-top: 60px;
+        margin-left: 100px;
+
     }
 </style>
 <body>
@@ -28,13 +45,13 @@
 
     <div class="login-box">
 
-        <H1 style="margin-left: 90px; margin-top: 20px;"> LOGIN </H1>
+        <H1 style="margin-left: 90px; margin-top: 30px;"> LOGIN </H1>
 
         <div class="login-box-2">
-            <h3>Name: </h3>
+            <h3 style="margin-left: 20px;">Name: </h3>
         <input type="text" placeholder="Enter name">
 
-        <h3>Password: </h3>
+        <h3 style="margin-left: 20px;">Password: </h3>
         <input type="text"  placeholder="Enter Password">
 
         <button > login</button>

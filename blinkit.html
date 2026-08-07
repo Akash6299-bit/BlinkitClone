@@ -9,9 +9,28 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 80px;
+            height: 90px;
+            display: flex;
+            flex-direction: row;
             
+        
+        }
 
+        #search-box{
+            margin-left: 10px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        #search-box-1{
+            height: 40px;
+            width: 400px;
+            border-radius: 20px;
+            padding-left: 20px;
+            font-size: 20px;
         }
         .head{
             padding-bottom: 20px;
@@ -140,9 +159,14 @@
     <div>
             <div id="box1">
                  <h1 class="head"    style="color: rgb(241, 175, 51); font-weight: 800; "  >blink<span style="color: green;">it</span> </h1>
-             <nav class="navbar">
+             
+             <div id="search-box">
+                <input   id="search-box-1"  type="text" placeholder="search">
+                <button style="margin-left: 30px; height: 40px; width: 80px; border-radius: 20px; box-shadow: inset;"> search</button>
+             </div>
+                 <nav class="navbar">
                 <div class="right-menu">
-               <a href="#">Login</a>
+               <a href="login.html">Login</a>
                <a href="#">Cart 🛒</a>
     </div>
 
