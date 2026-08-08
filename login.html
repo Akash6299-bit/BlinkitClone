@@ -9,6 +9,12 @@
 
 <style>
 
+    #parent{
+        display: flex;
+        background-color: white(248, 248, 246);
+        justify-content: center;
+    }
+
 
     .login-box{
 
@@ -17,12 +23,33 @@
         height: 500px;
         margin-left: 30px;
         border-radius: 10px;
+        box-shadow: 0px 0px 10px;
     }
     .login-box-2{
         /* background-color: aliceblue; */
         height: 400px;
         display: flex;
         flex-direction: column;
+    }
+
+    #logo{
+        background-color: rgb(219, 199, 26);
+        height: 60px;;
+        width: 80px;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 108px;
+        border-radius: 20px;
+        margin-top: 10px;
+        
+        
+        
+    }
+
+    #logo h2{
+        margin: 0;
     }
 
     input{
@@ -42,10 +69,14 @@
 </style>
 <body>
 
-
+<div id="parent">
     <div class="login-box">
 
-        <H1 style="margin-left: 90px; margin-top: 30px;"> LOGIN </H1>
+        <div id="logo" >
+             <h2 > blink<span style="color: green;">it</span></h2>
+            </div>
+
+        <H1 style="margin-left: 30px; margin-top: 30px;"> Login or Sign up </H1>
 
         <div class="login-box-2">
             <h3 style="margin-left: 20px;">Name: </h3>
@@ -58,6 +89,7 @@
         </div>
 
     </div>
+</div>
 
     
 
