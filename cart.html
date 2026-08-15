@@ -8,17 +8,67 @@
 
     <style>
 
-        #heading{
+        /* #heading{
             background-color: gray;
-            height: 50px;
+            height: 70px;
             display: flex;
             align-items: center;
             display: flex;
             gap: 20px;
             padding-left: 20px;
             
+        } */
+
+          #box1{
+            color: black;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            position: sticky;
+           /* position: absolute;
+           margin-top: 0px; */
+            
+        
         }
 
+        #search-box{
+            margin-left: 10px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        #search-box-1{
+            height: 40px;
+            width: 400px;
+            border-radius: 20px;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        
+
+        .navbar a{
+    text-decoration: none;  
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    background-color: lightblue;
+    padding: 15px, 20px;
+   
+}
         #parent-d{
 
             display: flex;
@@ -70,17 +120,114 @@
         .home-link:hover{
             color: blue;
         }
+
+
+  .container-01{
+
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    box-shadow: 0px 0px 5px grey;
+    position: relative;
+    margin-left: 20px;
+
+
+   }
+
+   .container-01 h1{
+    position: absolute;
+
+    bottom: 70px;
+    left: 40px;
+   }
+
+   .container-01 h2{
+    position: absolute;
+
+    bottom: 50px;
+    left: 40px;
+   }
+
+   .detail{
+
+    background-color: aliceblue;
+    height: 400px;
+    width: 500px;
+    box-shadow: 0px 0px 5px grey;
+
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+   }
+
+   .detail button{
+
+    height: 40px;
+    width: 50px;
+    border-color:green;
+    border-radius: 20px;
+   }
+
+   .inc-dec{
+    display: flex;
+
+    position: absolute;
+    bottom: 10px;
+    right: 190px;
+    
+   }
+
+
+   .box-1{
+     display: flex;
+     flex-direction: row;
+     position: relative;
+   }
+
+   .item-img{
+
+    background-color: aliceblue;
+    height: 350px;
+    width: 491px;
+    position: absolute;
+
+    left: 2px;
+    top: 10px;
+    background-image: url();
+    
+   }
+
+   .item-detail{
+   position: absolute;
+    background-color: rgb(118, 118, 237);
+    height: 300px;
+    width: 472px;
+    left: 4px;
+    top: 4px;
+    padding-left: 20px;
+    
+   }
+   
+
+
     </style>
+
+
+   <!-- //new -->
+
+   
+
 </head>
 <body>
 
    
 
 <div id="parent-d">
-    <div id="heading">
+    <!-- <div id="heading">
 
         <!-- <h1 style="padding-left: 10px;">Cart</h1> -->
-       <a class="home-link" href="blinkit.html">
+       <!-- <a class="home-link" href="index.html">
          <h1 > Home </h1>
 
        </a>
@@ -88,9 +235,142 @@
          <h1 > login </h1>
 
        </a>
+    </div> --> -->
+
+    <div id="box1">
+                 <h1 class="head"    style="color: rgb(241, 175, 51); font-weight: 800; "  >blink<span style="color: green;">it</span> </h1>
+             
+             <div id="search-box">
+                <input   id="search-box-1"  type="text" placeholder="search">
+                <button style="margin-left: 30px; height: 40px; width: 80px; border-radius: 20px; box-shadow: inset;"> search</button>
+             </div>
+                 <nav class="navbar">
+                <div class="right-menu">
+               <a href="login.html">Login</a>
+               <a href="index.html">Home </a>
+                </div>
+
+                </nav>
+            
+                </div>
+
+
+
+<div class="box-1">
+
+  
+    <div class="container-01">
+
+        <div class="item-img">
+            <img src="" alt="">
+            
+
+
+        
+
+        </div>
+
+        <!-- <h1>Product Name</h1>
+        <h2> Price </h2> -->
     </div>
 
-    <div class="cart-1">
+    <div class="detail">
+
+        <div class="item-detail">
+            <h1> Peanut Butter  (350gm)</h1>
+
+            <h2> Price: 300rs</h2>
+
+            <h1> Rating: 4.4</h1>
+
+        </div>
+       
+
+        <div class="inc-dec">
+        <button id="dec"> - </button>
+        <h1 id="count">1</h1>
+        <button id="inc"> + </button>
+
+        </div>
+
+    </div>
+
+    
+</div>
+
+
+<div class="box-1">
+
+  
+    <div class="container-01">
+
+        <div class="item-img">
+
+
+        
+
+        </div>
+
+        <h1>Product Name</h1>
+        <h2> Price </h2>
+    </div>
+
+    <div class="detail">
+
+        <div class="item-detail">
+            <h1> </h1>
+        </div>
+       
+
+        <div class="inc-dec">
+        <button id="dec"> - </button>
+        <h1 id="count">1</h1>
+        <button id="inc"> + </button>
+
+        </div>
+
+    </div>
+
+    
+</div>
+
+<div class="box-1">
+
+  
+    <div class="container-01">
+
+        <div class="item-img">
+
+
+        
+
+        </div>
+
+        <h1>Product Name</h1>
+        <h2> Price </h2>
+    </div>
+
+    <div class="detail">
+
+        <div class="item-detail">
+            <h1> </h1>
+        </div>
+       
+
+        <div class="inc-dec">
+        <button id="dec"> - </button>
+        <h1 id="count">1</h1>
+        <button id="inc"> + </button>
+
+        </div>
+
+    </div>
+
+    
+</div>
+
+
+    <!-- <div class="cart-1">
         <div class="image"> 
             <img src="https://tse4.mm.bing.net/th/id/OIP.ML04LnU-y0NOS8RvmriHFwHaEP?r=0&pid=Api&P=0&h=180" alt="">
         </div>
@@ -111,8 +391,15 @@
             </h4>
             
         </div>
-        </div>
-     <div class="cart-1"> 
+        </div> -->
+
+
+
+
+
+
+
+     <!-- <div class="cart-1"> 
          <div class="image">
             <img src="https://tse4.mm.bing.net/th/id/OIP.-UlU2nlSIO-LIP4uQs6dsAHaHa?r=0&pid=Api&P=0&h=180" alt="">
          </div>
@@ -131,6 +418,11 @@
             </div>
         </div>
      </div>
+
+
+
+
+     
       <div class="cart-1"> 
          <div class="image">
             <img src="https://tse2.mm.bing.net/th/id/OIP.NAOJRhik1jHK3UJSzy0gWwHaHa?r=0&pid=Api&P=0&h=180" alt="">
@@ -150,7 +442,7 @@
         </div>
       </div>
 
-</div>
+</div> -->
 
     <script src="cart.js"></script>
 </body>

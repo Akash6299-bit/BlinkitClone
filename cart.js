@@ -1,6 +1,6 @@
-let increas=document.querySelectorAll(".increase");
-let decrease=document.querySelectorAll(".decrease");
-let counts=document.querySelectorAll(".count");
+let increas=document.querySelectorAll("#inc");
+let decrease=document.querySelectorAll("#dec");
+let counts=document.querySelectorAll("#count");
 
 
 increas.forEach((button, index) => {
