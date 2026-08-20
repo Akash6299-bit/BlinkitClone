@@ -172,8 +172,8 @@
      grid-template-columns: repeat(3, 1fr);
    
     gap: 30px;
-    position: absolute;
-    left: 70px;
+    /* position: absolute; */
+  margin: 30px 70px;
 
 
 
@@ -251,6 +251,63 @@
 /* .right-menu{
     background-color: white;
 } */
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 30px 70px;
+}
+
+
+.product-card {
+
+    font-size: large;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative; */
+}
+
+.product-card button{
+    margin-left: 58px;
+    /* bottom: 10px; */
+    
+    height: 40px;
+    width: 80px;
+}
+
+.product-card img {
+    width: 100%;           /* image fits inside card */
+    height: 150px;         /* fixed height */
+    object-fit: cover;     /* crop nicely without distortion */
+    border-radius: 6px;
+}
+/* .product-card {
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 20px gray;
+    border-color: black;
+} */
+
+.product-card {
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px gray;
+}
+
+
+.product-card h2 {
+    color: black;
+    margin: 0 0 10px 0;
+}
     </style>
 
 </head>
@@ -422,7 +479,10 @@
             </div>
               
         </div>
+
+        
     </div>
+    <div id="products"> </div>
 
     <script src="first.js"></script>
 
