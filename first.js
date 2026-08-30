@@ -122,3 +122,5 @@ products.forEach(function(product) {
 
     productContainer.append(card);
 });
+
+
